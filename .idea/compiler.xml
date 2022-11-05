@@ -2,24 +2,41 @@
 <project version="4">
   <component name="CompilerConfiguration">
     <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
       <profile name="Maven default annotation processors profile" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="member" />
-        <module name="product" />
-        <module name="ware" />
-        <module name="coupon" />
-        <module name="order" />
+        <module name="gulimall-coupon" />
+        <module name="gulimall-common" />
+        <module name="renren-fast" />
+        <module name="gulimall-order" />
+        <module name="gulimall-ware" />
+        <module name="gulimall-member" />
+        <module name="gulimall-product" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="coupon" target="1.5" />
+      <module name="member" target="1.5" />
+      <module name="order" target="1.5" />
+      <module name="product" target="1.5" />
+      <module name="ware" target="1.5" />
+    </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="coupon" options="" />
+      <module name="gulimall-common" options="-parameters" />
+      <module name="gulimall-coupon" options="-parameters" />
+      <module name="gulimall-member" options="-parameters" />
+      <module name="gulimall-order" options="-parameters" />
+      <module name="gulimall-product" options="-parameters" />
+      <module name="gulimall-ware" options="-parameters" />
       <module name="member" options="" />
       <module name="order" options="" />
       <module name="product" options="" />
+      <module name="renren-fast" options="-parameters" />
       <module name="ware" options="" />
     </option>
   </component>
